@@ -2,8 +2,9 @@ import pytest
 from langsmith import unit
 
 from react_agent import graph
+from dotenv import load_dotenv
 
-
+load_dotenv()
 @pytest.mark.asyncio
 @unit
 async def test_react_agent_simple_passthrough() -> None:
